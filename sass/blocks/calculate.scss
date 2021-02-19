@@ -1,0 +1,70 @@
+.calculate__wrapper {
+  @include paddings;
+  @include section-width;
+  @include centers;
+  @media #{$max-mobile-width} {
+    padding-bottom: 21px;
+  }
+  @media #{$min-tablet-width} {
+    padding-bottom: 30px;
+  }
+  @media #{$min-desktop-width} {
+    padding-bottom: 45px;
+  }
+}
+.calculate__container {
+  padding-left: 35px;
+  padding-right: 35px;
+  @media #{$max-mobile-width} {
+    border-radius: 25px;
+    padding-top: 35px;
+    padding-bottom: 38px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c5a96+0,062a5c+100 */
+    background: #2c5a96; /* Old browsers */
+    background: -moz-linear-gradient(top,  #2c5a96 0%, #062a5c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #2c5a96 0%,#062a5c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #2c5a96 0%,#062a5c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c5a96', endColorstr='#062a5c',GradientType=0 ); /* IE6-9 */
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    border-radius: 15px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5176a7+0,395e8f+100 */
+    background: #5176a7; /* Old browsers */
+    background: -moz-linear-gradient(top,  #5176a7 0%, #395e8f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #5176a7 0%,#395e8f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #5176a7 0%,#395e8f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5176a7', endColorstr='#395e8f',GradientType=0 ); /* IE6-9 */
+    box-shadow: 0 4px 3px inset rgba(255, 255, 255, 0.3), 3px 3px 15px 0 rgba(0, 0, 0, .3);
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.calculate__title {
+  color: #fff;
+  margin-top: 0;
+  text-align: center;
+  @media #{$max-mobile-width} {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 25px;
+    margin-bottom: 28px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+}
+.calculate__form-container {
+  @media #{$max-mobile-width} {
+    width: 210px;
+    @include centers;
+  }
+}

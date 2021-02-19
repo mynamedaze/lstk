@@ -1,0 +1,36 @@
+//display widths
+$max-mobile-width: "(max-width: 767px)";
+$max-mobile-wrapper: 540px;
+
+$mobile-width-only: "(min-width: 500px) and (max-width: 767px)";
+
+$max-mini-width: "(max-width: 499px)";
+
+$min-tablet-width: "(min-width: 768px)";
+$max-tablet-width: "(max-width: 1299px)";
+$tablet-width-only: "(min-width: 768px) and (max-width: 1299px)";
+$max-tablet-wrapper: 960px;
+
+$min-desktop-width: "(min-width: 1300px)";
+$max-desktop-wrapper: 1300px;
+
+$min-fullhd-width: "(min-width: 1921px)";
+
+//blocks
+$padding--mobile: 5px;
+$padding--tablet: 56px;
+$padding--desktop: 80px;
+
+//text
+$color--main: #000000;
+$color--alt: #ffffff;
+
+$font--main:  "gothampro", Arial, sans-serif;
+
+//backgrounds
+$bg--main: #ffffff;
+
+//links
+$link-color: #333333;
+$link-color--hover: #0d4f84;
+$link-color-v2: #0071cb;

@@ -1,0 +1,135 @@
+.montage-form {
+  padding-left: 35px;
+  padding-right: 35px;
+  @media #{$max-mobile-width} {
+    border-radius: 25px;
+    padding-top: 35px;
+    padding-bottom: 38px;
+    background-color: rgba(255, 255, 255, .9);
+    margin-top: 27px;
+    max-width: 290px;
+    @include centers;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 42px;
+    padding-bottom: 60px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, .3);
+    margin-top: 70px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 100px;
+  }
+}
+.montage-form__title {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 900;
+  @media #{$max-mobile-width} {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 25px;
+    margin-bottom: 28px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+}
+.montage-form__container {
+  @media #{$max-mobile-width} {
+    width: 210px;
+    @include centers;
+  }
+  @media #{$min-tablet-width} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.montage-form__input-container {
+  @media #{$max-mobile-width} {
+    margin-top: 30px;
+  }
+  @media #{$min-tablet-width} {
+    width: 23%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media #{$min-desktop-width} {
+    width: 240px;
+  }
+}
+.montage-form__input-container--file {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    right: 25px;
+    top: 50%;
+    transform: translateY(-18px);
+    width: 18px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("../img/file-upload.png");
+  }
+}
+.montage-form__input {
+  @include form-input--alt;
+}
+/*file input*/
+.montage-form__input--file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.montage-form__file-button-text {
+  line-height: 1;
+  margin-top: 1px;
+}
+.montage-form__file-button {
+  cursor: pointer;
+  @include form-input--alt;
+  display: block;
+}
+/*/file input*/
+.montage-form__submit-btn-container {
+  position: relative;
+  @media #{$max-mobile-width} {
+    width: 120px;
+    margin-top: 34px;
+    @include centers;
+  }
+  @media #{$min-tablet-width} {
+    width: 140px;
+  }
+  @media #{$min-desktop-width} {
+    width: 200px;
+  }
+  .confid {
+    @media #{$max-mobile-width} {
+      margin-top: 10px;
+    }
+    @media #{$min-tablet-width} {
+      position: absolute;
+      left: 0;
+      bottom: -45px
+    }
+    @media #{$min-desktop-width} {
+      bottom: -35px;
+    }
+  }
+}
+.montage-form__submit-btn {
+  @include main-btn--shadowed;
+}

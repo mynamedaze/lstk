@@ -1,0 +1,37 @@
+// global
+@import "./global/fonts";
+@import "./global/variables";
+@import "./global/mixins";
+@import "./global/scaffolding";
+
+//blocks
+@import "./blocks/first-screen";
+@import "./blocks/page-header";
+@import "./blocks/intro";
+@import "./blocks/pasc";
+@import "./blocks/recycle";
+@import "./blocks/utp";
+@import "./blocks/solutions";
+@import "blocks/second-screen";
+@import "./blocks/calculate";
+@import "./blocks/montage";
+@import "./blocks/montage-form";
+@import "./blocks/schema";
+@import "./blocks/schema-form";
+@import "./blocks/set";
+@import "./blocks/delivery";
+@import "./blocks/third-screen";
+@import "./blocks/about";
+@import "./blocks/question";
+@import "./blocks/page-footer";
+@import "./blocks/confid";
+
+//stages
+@import "./blocks/stage-1";
+@import "./blocks/stage-2";
+@import "./blocks/stage-3";
+
+//popups
+@import "./blocks/popup-callback";
+@import "./blocks/popup-success";
+@import "./blocks/overlay";

@@ -1,0 +1,19 @@
+.first-screen {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  @media #{$max-mobile-width} {
+    background-position: center bottom;
+    background-size: 100% auto;
+    background-image: url("../img/intro-bg--mobile.jpg");
+    background-color: #fcf6f8;
+  }
+  @media #{$min-tablet-width} {
+    background-image: url("../img/intro-bg--desktop.jpg");
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) and (min-height: 900px){
+    height: 100vh;
+  }
+}

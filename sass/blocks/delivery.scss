@@ -1,0 +1,121 @@
+.delivery__wrapper {
+  @include section-width;
+  @include paddings;
+  @include centers;
+  @media #{$max-mobile-width} {
+    padding-bottom: 42px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 21px;
+    padding-bottom: 38px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 30px;
+    padding-bottom: 55px;
+  }
+}
+.delivery__title {
+  @include common-title;
+}
+.delivery__list {
+  padding-left: 0;
+  margin-bottom: 0;
+  @media #{$max-mobile-width} {
+    margin-top: 0;
+  }
+  @media #{$min-tablet-width} {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 53px;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 80px;
+  }
+}
+.delivery__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media #{$max-mobile-width} {
+    min-height: 100px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .25);
+    margin-top: 23px;
+    padding: 10px 10px 10px 96px;
+  }
+  @media #{$min-tablet-width} {
+    width: 30%;
+    box-shadow: 0 15px 11px 0 rgba(0, 0, 0, .6);
+    padding: 40px 27px 27px 27px;
+    align-items: center;
+  }
+  @media #{$min-desktop-width} {
+    width: 310px;
+    padding: 30px;
+    min-height: 322px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    @media #{$max-mobile-width} {
+      width: 53px;
+      height: 53px;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+    }
+    @media #{$min-tablet-width} {
+      top: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 105px;
+      height: 70px;
+    }
+    @media #{$min-desktop-width} {
+      top: -50px;
+      width: 150px;
+      height: 100px;
+    }
+  }
+  &:nth-child(1)::before {
+    background-image: url("../img/delivery-1.png");
+  }
+  &:nth-child(2)::before {
+    background-image: url("../img/delivery-2.png");
+  }
+  &:nth-child(3)::before {
+    background-image: url("../img/delivery-3.svg");
+  }
+}
+.delivery__item-title {
+  display: block;
+  font-weight: 900;
+  @media #{$max-mobile-width} {
+    font-size: 16px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 21px;
+    text-align: center;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 30px;
+  }
+}
+.delivery__item-text {
+  @media #{$max-mobile-width} {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 14px;
+    font-size: 17px;
+    text-align: center;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}

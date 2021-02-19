@@ -1,0 +1,39 @@
+.stage-1 {
+  @media #{$min-tablet-width} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.stage-1__input-container {
+  @media #{$max-mobile-width} {
+    margin-top: 30px;
+  }
+  @media #{$min-tablet-width} {
+    width: 23%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media #{$min-desktop-width} {
+    width: 240px;
+  }
+}
+.stage-1__input {
+  @include form-input;
+}
+.stage-1__next-btn-container {
+  @media #{$max-mobile-width} {
+    width: 120px;
+    margin-top: 34px;
+    @include centers;
+  }
+  @media #{$min-tablet-width} {
+    width: 140px;
+  }
+  @media #{$min-desktop-width} {
+    width: 200px;
+  }
+}
+.stage-1__next-btn {
+  @include main-btn--shadowed;
+}

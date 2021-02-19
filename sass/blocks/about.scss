@@ -1,0 +1,107 @@
+.about__wrapper {
+  @include section-width;
+  @include centers;
+  display: flex;
+  @media #{$max-mobile-width} {
+    flex-direction: column;
+    background-color: #adcaea;
+    padding-top: 10px;
+  }
+  @media #{$min-tablet-width} {
+    flex-wrap: wrap;
+    padding-left: $padding--tablet;
+    padding-right: $padding--tablet;
+  }
+  @media #{$min-desktop-width} {
+    padding-left: $padding--desktop;
+    padding-right: $padding--desktop;
+  }
+}
+.about__title {
+  @include common-title;
+  width: 100%;
+  @media #{$min-tablet-width} {
+    transform: translateY(56px);
+  }
+  @media #{$min-desktop-width} {
+    transform: translateY(80px);
+  }
+}
+.about__img-field {
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media #{$max-mobile-width} {
+    background-position: center top;
+    background-image: url("../img/about-bg-mobile.jpg");
+    min-height: 279px;
+    order: 2;
+  }
+  @media #{$min-tablet-width} {
+    width: 50%;
+    background-position: left top;
+    background-image: url("../img/about-bg-tablet.jpg");
+  }
+}
+.about__text-field {
+  @media #{$max-mobile-width} {
+    padding-left: $padding--mobile;
+    padding-right: $padding--mobile;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#adcaea+0,ebeff1+100 */
+    background: #adcaea; /* Old browsers */
+    background: -moz-linear-gradient(top,  #adcaea 0%, #ebeff1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #adcaea 0%,#ebeff1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #adcaea 0%,#ebeff1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#adcaea', endColorstr='#ebeff1',GradientType=0 ); /* IE6-9 */
+  }
+  @media #{$min-tablet-width} {
+    width: 50%;
+    padding: 14px;
+    margin-top: 50px;
+  }
+  @media #{$min-desktop-width} {
+    padding: 20px;
+  }
+}
+.about__list {
+  padding-left: 0;
+}
+.about__item {
+  position: relative;
+  @media #{$max-mobile-width} {
+    font-size: 12px;
+    margin-top: 15px;
+    padding-left: 25px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 15px;
+    margin-top: 21px;
+    padding-left: 35px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 22px;
+    margin-top: 30px;
+    padding-left: 50px;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("../img/check.png");
+    @media #{$max-mobile-width} {
+      width: 19px;
+      height: 16px;
+    }
+    @media #{$min-tablet-width} {
+      width: 19px;
+      height: 16px;
+    }
+    @media #{$min-desktop-width} {
+      width: 27px;
+      height: 23px;
+    }
+  }
+}

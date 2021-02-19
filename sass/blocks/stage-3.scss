@@ -1,0 +1,75 @@
+.stage-3 {
+  @media #{$min-tablet-width} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @media #{$min-tablet-width} {
+      @include centers;
+      max-width: 588px;
+    }
+    @media #{$min-desktop-width} {
+      max-width: 840px;
+    }
+  }
+}
+.stage-3__input-container {
+  @media #{$max-mobile-width} {
+    margin-top: 30px;
+  }
+  @media #{$min-tablet-width} {
+    width: 23%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media #{$min-desktop-width} {
+    width: 240px;
+  }
+}
+.stage-3__input {
+  @include form-input;
+}
+.stage-3__submit-btn-container {
+  @media #{$max-mobile-width} {
+    width: 120px;
+    margin-top: 34px;
+    @include centers;
+  }
+  @media #{$min-tablet-width} {
+    width: 140px;
+  }
+  @media #{$min-desktop-width} {
+    width: 200px;
+  }
+}
+.stage-3__submit-btn {
+  @include main-btn--shadowed;
+}
+.stage-3__textarea-container {
+  margin-top: 20px;
+  @media #{$min-tablet-width} {
+    order: 2;
+    width: 100%;
+  }
+}
+.stage-3__textarea {
+  width: 100%;
+  height: 56px;
+  border: 1px solid #f7b901;
+  background-color: transparent;
+  color: #fff;
+  &::-webkit-input-placeholder {color:#fff;}
+  &::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+  &:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+  &:-ms-input-placeholder      {color:#fff;}
+}
+.stage-3__confid-field {
+  margin-top: 10px;
+  color: #8E8E8E;
+  @media #{$min-tablet-width} {
+    order: 3;
+  }
+  a {
+    color: #f7b901;
+  }
+}

@@ -1,0 +1,105 @@
+.montage {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media #{$max-mobile-width} {
+    background-image: url("../img/montage-bg--mobile.jpg");
+  }
+  @media #{$min-tablet-width} {
+    background-image: url("../img/montage-bg--tablet.jpg");
+  }
+  @media #{$min-desktop-width} {
+    background-image: url("../img/montage-bg--desktop.jpg");
+  }
+}
+.montage__wrapper {
+  @include section-width;
+  @include paddings;
+  @include centers;
+  position: relative;
+  @media #{$max-mobile-width} {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 28px;
+    padding-bottom: 40px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 40px;
+    padding-bottom: 55px;
+  }
+}
+.montage__title {
+  @include common-title;
+  span {
+    color: #f7b901;
+  }
+  @media #{$min-tablet-width} {
+    margin-bottom: 35px;
+  }
+  @media #{$min-desktop-width} {
+    margin-bottom: 50px;
+  }
+}
+.montage__sign {
+  @media #{$max-mobile-width} {
+    display: none;
+  }
+  @media #{$min-tablet-width} {
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 15px;
+    font-size: 16px;
+    left: 20px;
+    top: 120px;
+    width: 200px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 18px;
+    left: -10px;
+    top: 140px;
+    width: 270px;
+  }
+}
+.montage__sign-title {
+  display: block;
+  font-weight: 900;
+}
+.montage__sign-description {
+  display: block;
+  font-style: italic;
+}
+.montage__text-field {
+  @media #{$max-mobile-width} {
+    background-color: rgba(255, 255, 255, .6);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+  }
+  @media #{$min-tablet-width} {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 45px;
+    font-size: 17px;
+    line-height: 25px;
+  }
+  @media #{$min-desktop-width} {
+    padding-left: 65px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.montage__sign-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-style: italic;
+}
+.montage__item {
+  list-style-type: none;
+}

@@ -1,0 +1,36 @@
+.recycle {
+  @media #{$max-tablet-width} {
+    display: none !important;
+  }
+  @media #{$min-desktop-width} {
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    left: 42%;
+    top: 51%;
+  }
+  &:hover {
+    .recycle__content {
+      display: block;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 1);
+      padding: 10px;
+      border-radius: 13px;
+    }
+    .recycle__img {
+      filter: drop-shadow(0 0 10px rgba(243, 200, 13, 1));
+    }
+  }
+  .recycle__img {
+    width: 61px;
+  }
+  .recycle__content {
+    width: 240px;
+    left: -170px;
+    top: 0;
+    transform: translateY(-100%);
+  }
+}
+.recycle__content {
+  display: none;
+}
