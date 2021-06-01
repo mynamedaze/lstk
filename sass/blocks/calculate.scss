@@ -7,6 +7,9 @@
   }
   @media #{$min-tablet-width} {
     padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
   @media #{$min-desktop-width} {
     padding-bottom: 45px;
@@ -37,6 +40,7 @@
     background: linear-gradient(to bottom,  #5176a7 0%,#395e8f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5176a7', endColorstr='#395e8f',GradientType=0 ); /* IE6-9 */
     box-shadow: 0 4px 3px inset rgba(255, 255, 255, 0.3), 3px 3px 15px 0 rgba(0, 0, 0, .3);
+    width: 48%;
   }
   @media #{$min-desktop-width} {
     padding-top: 60px;

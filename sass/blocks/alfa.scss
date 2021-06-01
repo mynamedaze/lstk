@@ -1,0 +1,18 @@
+.alfa {
+  background-color: red;
+  padding-left: 35px;
+  padding-right: 35px;
+  @media #{$max-mobile-width} {
+    padding-bottom: 21px;
+  }
+  @media #{$min-tablet-width} {
+    padding-bottom: 30px;
+    width: 48%;
+  }
+  @media #{$min-desktop-width} {
+    padding-bottom: 45px;
+  }
+  .alfa__input {
+    @include form-input;
+  }
+}
