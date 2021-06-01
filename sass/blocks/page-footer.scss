@@ -218,6 +218,21 @@
     }
   }
 }
+.page-footer__phone-free-description {
+  display: block;
+  font-size: 14px;
+}
+.page-footer__contact-phone-link {
+  display: inline-block;
+}
+.page-footer__contact-phone-link--first {
+  @media #{$min-tablet-width} {
+    margin-bottom: 20px;
+  }
+}
+.page-footer__contact-phone-link--second {
+  margin-top: 10px;
+}
 .page-footer__contact-mail-link {
   position: relative;
   &::before {
@@ -326,10 +341,10 @@
   @media #{$min-tablet-width} {
     position: relative;
     z-index: 2;
-    height: 400px;
+    height: 550px;
   }
   @media #{$min-desktop-width} {
-    height: 560px;
+    height: 650px;
   }
 }
 #map {

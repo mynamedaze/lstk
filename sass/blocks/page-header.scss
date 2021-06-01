@@ -52,11 +52,12 @@
     margin-right: 20px;
   }
   @media #{$min-tablet-width} {
-    width: 60px;
+    width: 80px;
     margin-right: 40px;
+    padding-left: 20px;
   }
   @media #{$min-desktop-width} {
-    width: 85px;
+    width: 105px;
     margin-right: 58px;
   }
 }
@@ -92,8 +93,8 @@
 }
 .page-header__contacts-phone-container {
   display: flex;
+  flex-direction: column;
   @media #{$max-mobile-width} {
-    flex-direction: column;
     order: 2;
     font-size: 10px;
   }
@@ -111,6 +112,11 @@
   color: $color--main;
   @media #{$max-mobile-width} {
     padding-bottom: 3px;
+  }
+}
+.page-header__phone-description {
+  @media #{$min-tablet-width} {
+    font-size: 10px;
   }
 }
 .page-header__work-time {

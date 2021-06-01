@@ -12,6 +12,22 @@
     background-image: url("../img/intro-bg--desktop.jpg");
     display: flex;
     flex-direction: column;
+    background-size: auto auto;
+  }
+  @media #{$min-desktop-width} {
+    background-size: 137% auto;
+  }
+  @media (min-width: 1400px) {
+    background-size: 127% auto;
+  }
+  @media (min-width: 1500px) {
+    background-size: 117% auto;
+  }
+  @media (min-width: 1600px) {
+    background-size: 107% auto;
+  }
+  @media (min-width: 1700px) {
+    background-size: cover;
   }
   @media screen and (min-width: 1200px) and (min-height: 900px){
     height: 100vh;

@@ -101,6 +101,7 @@ if (isset($_FILES[$input_name])) {
 				if (move_uploaded_file($file['tmp_name'], $path . $name)) {
 					// Далее можно сохранить название файла в БД и т.п.
 					$success = 'Файл «' . $name . '» успешно загружен.';
+					$file_url = 'https://lstkpartner.ru/uploads/'.$name;
 				} else {
 					$error = 'Не удалось загрузить файл.';
 				}
@@ -125,16 +126,16 @@ require 'phpmailer/src/SMTP.php';
 
 $file_ext = pathinfo($name, PATHINFO_EXTENSION);
 
-$firstname = $_POST['d-name'];
-$telephone = $_POST['d-tel'];
-$firstname = htmlspecialchars($firstname);
-$telephone = htmlspecialchars($telephone);
-$firstname = urldecode($firstname);
-$telephone = urldecode($telephone);
-$firstname = trim($firstname);
-$telephone = trim($telephone);
+$name = $_POST['d-name'];
+$phone = $_POST['d-tel'];
+$name = htmlspecialchars($name);
+$phone = htmlspecialchars($phone);
+$name = urldecode($name);
+$phone = urldecode($phone);
+$name = trim($name);
+$phone = trim($phone);
 
-$mess = "Заявка с ЛСТК (со своим проектом): \n Имя: ".$firstname."\n Телефон: ".$telephone;
+$mess = "Заявка с ЛСТК (со своим проектом): \n Имя: ".$name."\n Телефон: ".$phone;
 
 $mail = new PHPMailer();
 $mail->setFrom('crm@lstkpartner.ru', 'LSTK Order');
@@ -143,6 +144,10 @@ $mail->Subject = 'Заявка ЛСТК с проектом';
 $mail->Body = $mess;
 $mail->addAttachment($path . $name);
 $mail->send();
+
+
+
+$_POST['form-title'] = 'Готовый проект';	
 
 if (isset($phone) && !empty($phone)) {
         require 'vendor/autoload.php';

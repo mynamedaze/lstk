@@ -2,7 +2,7 @@
   "name": "lstk",
   "version": "1.0.0",
   "description": "",
-  "main": "index.php",
+  "main": "index.html",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.26.13",
